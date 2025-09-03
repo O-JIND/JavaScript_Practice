@@ -48,8 +48,8 @@ function App(){
     console.log('Seperate Component');
 //javascript coding page
         return(
-        <div>
-            <Top />
+        <div age ="1800">
+            <Top  money = "1000" />
 
        </div>
         );}
