@@ -43,7 +43,9 @@ export const menuData = [
 
                 chapter: "My Ground",
                 items: [
-                        { path: '/prac', label: 'Practice Myself' }
+                        { path: '/prac', label: 'Practice Myself' },
+                        { path: '/eventprob', label: 'Practice problem' }
+
                 ]
 
         },

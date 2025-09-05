@@ -1,14 +1,13 @@
-import MenuBox from './MenuBox'
-
-
 
 function App() {
 
+
     return (
         <div className="App">
-            <MenuBox />
+
         </div>
     );
+
 
 }
 export default App;

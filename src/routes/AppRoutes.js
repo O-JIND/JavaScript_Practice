@@ -29,6 +29,10 @@ import AppKey from '../Components/ch04.event_handling/key_event';
 
 
 
+
+
+import AppEventpb from '../Components/ch04.event_handling/pp/eventprob';
+
 import AppPractice from '../MM/prac';
 
 
@@ -67,6 +71,7 @@ function AppRoutes() {
 
 
 
+            <Route path='/eventprob' element={<AppEventpb />} />
             <Route path='/prac' element={<AppPractice />} />
 
         </Routes>
