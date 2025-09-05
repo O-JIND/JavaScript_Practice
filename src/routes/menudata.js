@@ -24,9 +24,28 @@ export const menuData = [
                         { path: '/component_seperate', label: 'Seperate component' },
                         { path: '/file_seperator', label: 'File seperate' },
                         { path: '/use_props', label: 'File seperate Using props' },
-                        { path: '/array_and_table01', label: 'File seperate Using props' }
+                        { path: '/array_and_table01', label: 'File seperate Using props' },
+                        { path: '/array_and_table02', label: 'prove File example' }
 
                 ]
+
+        }, {
+
+                chapter: "ch04.event_handling",
+                items: [
+                        { path: '/click_event', label: 'Click event' },
+                        { path: '/change_event', label: 'Change event' },
+                        { path: '/mouse_event', label: 'Mouse event' },
+                        { path: '/key_event', label: 'Key event' }
+                ]
+
+        }, {
+
+                chapter: "My Ground",
+                items: [
+                        { path: '/prac', label: 'Practice Myself' }
+                ]
+
         },
         //add extra chapter
 

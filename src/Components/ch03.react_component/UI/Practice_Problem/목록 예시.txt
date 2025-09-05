@@ -1,0 +1,75 @@
+다음 게시물 목록과 회원 정보 목록 데이터를 사용하여 컴포넌트를 구성해 보세요.
+
+파일 : array_and_table_02.js
+BoardList.js : 
+	표 형식으로 만들기
+MemberListl.js : 
+	표 형식으로 만들기
+	나이를 사용하여 미성년자를 체크 하세요.
+
+
+
+* 게시물 목록 데이터 (boardList)
+const boardList = [
+    {
+        id: 1,
+        title: "React 기초 배우기",
+        content: "React의 기본 개념과 컴포넌트 구조를 학습하는 게시물입니다.",
+        author: "홍길동",
+        date: "2025-09-04"
+    },
+    {
+        id: 2,
+        title: "JavaScript 비동기 처리",
+        content: "Promise, async/await 등을 활용한 비동기 처리 방법을 정리한 글입니다.",
+        author: "김철수",
+        date: "2025-09-03"
+    },
+    {
+        id: 3,
+        title: "CSS Flexbox 완벽 가이드",
+        content: "Flexbox를 활용한 레이아웃 구성과 실전 예제 게시물입니다.",
+        author: "박영희",
+        date: "2025-09-02"
+    },
+    {
+        id: 4,
+        title: "Node.js Express 서버 구축",
+        content: "Node.js와 Express를 사용하여 간단한 웹 서버를 구축하는 방법을 설명합니다.",
+        author: "이민수",
+        date: "2025-09-01"
+    }
+];
+
+* 회원 정보 목록 데이터 (memberList)
+const memberList = [
+    {
+        id: "hong123",
+        name: "홍길동",
+        email: "hong123@example.com",
+        joinDate: "2024-06-15",
+        age: 10
+    },
+    {
+        id: "kimc456",
+        name: "김철수",
+        email: "kimc456@example.com",
+        joinDate: "2024-07-20",
+        age: 15
+    },
+    {
+        id: "park789",
+        name: "박영희",
+        email: "park789@example.com",
+        joinDate: "2024-08-05",
+        age: 20
+    },
+    {
+        id: "lee101",
+        name: "이민수",
+        email: "lee101@example.com",
+        joinDate: "2024-09-12",
+        age: 25
+    }
+];
+

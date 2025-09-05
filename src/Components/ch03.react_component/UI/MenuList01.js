@@ -32,24 +32,22 @@ function App() {
 
     );
     return (
-        <div className="App">
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>id</th>
-                        <th>name</th>
-                        <th>image</th>
-                        <th>price</th>
-                        <th>Comment</th>
-                        <th>description</th>
-                    </tr>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>image</th>
+                    <th>price</th>
+                    <th>Comment</th>
+                    <th>description</th>
+                </tr>
 
-                </thead>
-                <tbody>
-                    {trlist}
-                </tbody>
-            </table>
-        </div>
+            </thead>
+            <tbody>
+                {trlist}
+            </tbody>
+        </table>
     );
 
 }

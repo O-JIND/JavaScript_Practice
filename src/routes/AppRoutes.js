@@ -17,12 +17,28 @@ import AppFunctiontype from '../Components/ch03.react_component/component02';
 import AppSeperate from '../Components/ch03.react_component/component_seperate';
 import AppProps from '../Components/ch03.react_component/use_props';
 import AppFileseperator from '../Components/ch03.react_component/file_seperator';
-import AppTable from '../Components/ch03.react_component/array_and_table01.js';
+import AppTable from '../Components/ch03.react_component/array_and_table01';
+import AppTable22 from '../Components/ch03.react_component/array_and_table02';
+
+
+import AppEvent from '../Components/ch04.event_handling/click_event';
+import AppChange from '../Components/ch04.event_handling/change_event';
+import AppMouse from '../Components/ch04.event_handling/mouse_event';
+import AppKey from '../Components/ch04.event_handling/key_event';
+
+
+
+
+import AppPractice from '../MM/prac';
 
 
 function AppRoutes() {
     return (
         <Routes>
+
+
+
+
             <Route path='/' element={<AppLetConst />} />
             <Route path='/let_const' element={<AppLetConst />} />
             <Route path='/Template_String' element={<AppTemplateString />} />
@@ -39,6 +55,19 @@ function AppRoutes() {
             <Route path='/file_seperator' element={<AppFileseperator />} />
             <Route path='/use_props' element={<AppProps />} />
             <Route path='/array_and_table01' element={<AppTable />} />
+            <Route path='/array_and_table02' element={<AppTable22 />} />
+
+
+            <Route path='/click_event' element={<AppEvent />} />
+            <Route path='/change_event' element={<AppChange />} />
+            <Route path='/mouse_event' element={<AppMouse />} />
+            <Route path='/key_event' element={<AppKey />} />
+
+
+
+
+
+            <Route path='/prac' element={<AppPractice />} />
 
         </Routes>
     );

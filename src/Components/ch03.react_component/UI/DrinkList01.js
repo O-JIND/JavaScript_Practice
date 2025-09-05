@@ -16,6 +16,7 @@ function App() {
 
         </tr>
     ));
+
     const total =
         <table border="1">
             <thead>
