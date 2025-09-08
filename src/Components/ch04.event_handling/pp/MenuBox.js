@@ -18,52 +18,55 @@ function App() {
 
 
 
-    const getChange = () => {
-        const val = document.getElementById("Choose").value;
-        if (val === "Menu") {
-            document.getElementById('table').setTag = "ul";
-            return MenuList;
+    const getChange = (evt) => {
+        const get = evt.target.id;
+        const val = evt.target.value;
+        if (val == "Drink") {
+
+            return (
+                val
+            )
+        } else if (get == "Menu") {
+            return (
+                val
+            )
+        } else {
+            return ("")
         }
-        if (val === "Drink") {
-            document.getElementById('table').setTag = "ol";
-            return DrinkList;
-        }
-        return [];
+
+
+
 
     }
 
 
 
     const makeTable = () => {
-        if (getChange == MenuList) {
-            const myarr = MenuList;
-        }
-        else if (getChange == DrinkList) {
-            const myarr = DrinkList;
-        } else {
-            return [];
-        }
+        const change = getChange.value;
 
-        return (<table id="table" >
-            <thead>
-                <tr>
-                    <th>no</th>
-                    <th>name</th>
-                    <th>price</th>
-                    <th>image</th>
+        let arr = [];
+        if (change == "Drink") {
+            arr = DrinkList
+        } else if (change == "Menu") {
+            arr = MenuList
+        } else { }
+
+
+        const myarr = () => (
+            arr.map((item, no) => (
+                <tr key={no}>
+                    <td>{item.no}</td>
+                    <td>{item.name}</td>
+                    <td>{item.price}</td>
+                    <td><img src={item.image} alt="NONO" /></td>
                 </tr>
-            </thead>
+
+            ))
+        )
+        return (
             <tbody>
-
-                <tr>
-                    <td>myarr.no</td>
-                    <td>myarr.name</td>
-                    <td>myarr.price</td>
-                    <td><img scr="myarr.image" /></td>
-                </tr>
-
+                {myarr()}
             </tbody>
-        </table>
         )
     }
 
@@ -74,15 +77,23 @@ function App() {
             <header>
                 <h2>Menu :</h2>
             </header>
-            <select id="Choose" onChange={() => getChange}>
+            <select id="Choose" onChange={getChange}>
                 <option value="-">Choose one</option>
                 <option value="Menu">Menu</option>
                 <option value="Drink">Drink</option>
             </select>
             <br />
-            <ul>
-                {makeTable}
-            </ul>
+            <table id="table" border="1" >
+                <thead>
+                    <tr>
+                        <th>no</th>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>image</th>
+                    </tr>
+                </thead>
+                {makeTable()}
+            </table>
         </div >
     );
 

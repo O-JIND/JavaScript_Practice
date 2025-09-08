@@ -36,10 +36,24 @@ export const menuData = [
                         { path: '/click_event', label: 'Click event' },
                         { path: '/change_event', label: 'Change event' },
                         { path: '/mouse_event', label: 'Mouse event' },
-                        { path: '/key_event', label: 'Key event' }
+                        { path: '/key_event', label: 'Key event' },
+                        { path: '/submit_event', label: 'Submit event' }
                 ]
 
-        }, {
+        },
+        {
+
+                chapter: "ch05.hooks",
+                items: [
+                        { path: '/use_state_01', label: 'State event1' },
+                        { path: '/use_state_02', label: 'State event2' },
+                        { path: '/use_state_02tc', label: 'State event2 teacher\'s' },
+                        { path: '/use_state_03', label: 'State event3 teacher\'s' },
+
+                ]
+
+        },
+        {
 
                 chapter: "My Ground",
                 items: [

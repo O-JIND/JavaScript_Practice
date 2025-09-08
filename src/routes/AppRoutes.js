@@ -25,6 +25,15 @@ import AppEvent from '../Components/ch04.event_handling/click_event';
 import AppChange from '../Components/ch04.event_handling/change_event';
 import AppMouse from '../Components/ch04.event_handling/mouse_event';
 import AppKey from '../Components/ch04.event_handling/key_event';
+import AppSubmit from '../Components/ch04.event_handling/submit_event';
+
+
+
+import AppHook1 from '../Components/ch05.hooks/use_state_01';
+import AppHook2 from '../Components/ch05.hooks/use_state_02';
+import AppHook2tc from '../Components/ch05.hooks/use_state_02tc';
+import AppHook3 from '../Components/ch05.hooks/use_state_03';
+
 
 
 
@@ -66,6 +75,18 @@ function AppRoutes() {
             <Route path='/change_event' element={<AppChange />} />
             <Route path='/mouse_event' element={<AppMouse />} />
             <Route path='/key_event' element={<AppKey />} />
+            <Route path='/submit_event' element={<AppSubmit />} />
+
+
+
+
+
+
+
+            <Route path='/use_state_01' element={<AppHook1 />} />
+            <Route path='/use_state_02' element={<AppHook2 />} />
+            <Route path='/use_state_02tc' element={<AppHook2tc />} />
+            <Route path='/use_state_03' element={<AppHook3 />} />
 
 
 
