@@ -51,6 +51,9 @@ export const menuData = [
                         { path: '/use_state_03', label: 'State event3' },
                         { path: '/use_state_04', label: 'State event4' },
                         { path: '/use_effect_01', label: 'Effect event1' },
+                        { path: '/use_effect_02', label: 'Effect event2' },
+                        { path: '/use_effect_03', label: 'Effect event3' },
+
 
                 ]
 

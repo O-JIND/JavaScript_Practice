@@ -30,14 +30,24 @@ function App() {
     }
 
     const MyTimer = () => {
-        setTimeout(SomeAction, interval)
+        const timertime = setTimeout(SomeAction, interval)
     }
+
+    const Timeout = setTimeout(() => {
+        clearTimeout(MyTimer.timertime)
+    }
+        , interval
+    );
+
     useEffect((MyTimer), [count]);
+
     return (
         <>
             <h1>Counter : {count}</h1>
             <div>
                 <img src={image} alt="Image" width={imageSize} height={imageSize} />
+                <br /><br /><br />
+                <button onClick={Timeout}>Stop</button>
             </div>
         </>
     );

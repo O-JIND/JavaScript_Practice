@@ -34,7 +34,9 @@ import AppHook2 from '../Components/ch05.hooks/use_state_02';
 import AppHook2tc from '../Components/ch05.hooks/use_state_02tc';
 import AppHook3 from '../Components/ch05.hooks/use_state_03';
 import AppHook4 from '../Components/ch05.hooks/use_state_04';
-import AppEffect4 from '../Components/ch05.hooks/use_effect_01';
+import AppEffect1 from '../Components/ch05.hooks/use_effect_01';
+import AppEffect2 from '../Components/ch05.hooks/use_effect_02';
+import AppEffect3 from '../Components/ch05.hooks/use_effect_03';
 
 
 
@@ -90,7 +92,9 @@ function AppRoutes() {
             <Route path='/use_state_02tc' element={<AppHook2tc />} />
             <Route path='/use_state_03' element={<AppHook3 />} />
             <Route path='/use_state_04' element={<AppHook4 />} />
-            <Route path='/use_effect_01' element={<AppEffect4 />} />
+            <Route path='/use_effect_01' element={<AppEffect1 />} />
+            <Route path='/use_effect_02' element={<AppEffect2 />} />
+            <Route path='/use_effect_03' element={<AppEffect3 />} />
 
 
 
