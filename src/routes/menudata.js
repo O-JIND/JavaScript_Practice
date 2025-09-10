@@ -57,6 +57,16 @@ export const menuData = [
 
                 ]
 
+        }, {
+
+                chapter: "ch06.bootstrap",
+                items: [
+                        { path: '/main', label: 'drink_menu_01' },
+                        { path: '/main2', label: 'drink_menu_02' },
+
+
+                ]
+
         },
         {
 

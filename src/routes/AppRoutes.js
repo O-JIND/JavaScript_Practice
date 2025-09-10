@@ -12,6 +12,7 @@ import AppArrow from '../Components/ch02.es6_syntax/arrow_function';
 import AppMap from '../Components/ch02.es6_syntax/array_map';
 import AppSpread from '../Components/ch02.es6_syntax/spread_operator';
 
+//3장
 import AppClasstype from '../Components/ch03.react_component/component01';
 import AppFunctiontype from '../Components/ch03.react_component/component02';
 import AppSeperate from '../Components/ch03.react_component/component_seperate';
@@ -20,7 +21,7 @@ import AppFileseperator from '../Components/ch03.react_component/file_seperator'
 import AppTable from '../Components/ch03.react_component/array_and_table01';
 import AppTable22 from '../Components/ch03.react_component/array_and_table02';
 
-
+//4장
 import AppEvent from '../Components/ch04.event_handling/click_event';
 import AppChange from '../Components/ch04.event_handling/change_event';
 import AppMouse from '../Components/ch04.event_handling/mouse_event';
@@ -28,7 +29,7 @@ import AppKey from '../Components/ch04.event_handling/key_event';
 import AppSubmit from '../Components/ch04.event_handling/submit_event';
 
 
-
+//5장
 import AppHook1 from '../Components/ch05.hooks/use_state_01';
 import AppHook2 from '../Components/ch05.hooks/use_state_02';
 import AppHook2tc from '../Components/ch05.hooks/use_state_02tc';
@@ -40,6 +41,9 @@ import AppEffect3 from '../Components/ch05.hooks/use_effect_03';
 
 
 
+//6장
+import AppBoot from '../Components/ch06.bootstrap/drink_menu_01/main';
+import AppBoot2 from '../Components/ch06.bootstrap/drink_menu_02/main2';
 
 
 
@@ -97,6 +101,11 @@ function AppRoutes() {
             <Route path='/use_effect_03' element={<AppEffect3 />} />
 
 
+
+
+
+            <Route path='/main' element={<AppBoot />} />
+            <Route path='/main2' element={<AppBoot2 />} />
 
 
 

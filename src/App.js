@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 
-
 import AppRouters from './routes/AppRoutes'
 import { menuData } from './routes/menudata'
 
@@ -11,6 +10,7 @@ function App() {
 
     <div className="App">
       <h1>React Example Navigation</h1>
+
       <table border="1">
         <thead>
           <tr>
