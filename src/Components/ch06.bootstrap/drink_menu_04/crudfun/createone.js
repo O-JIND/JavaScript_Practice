@@ -3,24 +3,29 @@ import Formstyle from '../css/Formstyle.css'
 
 
 function App({ onSubmitInsert }) {
+    const comment = 'register';
+
     const SubmitData = (evt) => {
         evt.preventDefault();
         const formData = evt.target;
         onSubmitInsert(formData);
     }
+
+
+
     return (
         <div className="Createform">
-            <h2>Create Product</h2>
+            <h2>Create {comment}</h2>
             <form onSubmit={SubmitData} action='#'>
-                <InputGroup className='CustomInputgroup'>
+                <InputGroup className='custom-input-text'>
                     <InputGroup.Text className='intext'>Name</InputGroup.Text>
-                    <Form.Control name='name' />
+                    <Form.Control type='text' name='name' />
                 </InputGroup>
-                <InputGroup className='CustomInputgroup'>
+                <InputGroup className='custom-input-text'>
                     <InputGroup.Text className='intext'>price</InputGroup.Text>
                     <Form.Control name='price' />
                 </InputGroup>
-                <InputGroup className='CustomInputgroup'>
+                <InputGroup className='custom-input-text'>
                     <InputGroup.Text className='intext'>category</InputGroup.Text>
                     <Form.Select name='category' >
                         <option value="-">-- Choose category</option>
@@ -28,19 +33,19 @@ function App({ onSubmitInsert }) {
                         <option value="food">Food</option>
                     </Form.Select >
                 </InputGroup>
-                <InputGroup className='CustomInputgroup'>
+                <InputGroup className='custom-input-text'>
                     <InputGroup.Text className='intext'>stock</InputGroup.Text>
                     <Form.Control name='stock' />
                 </InputGroup>
-                <InputGroup className='CustomInputgroup'>
+                <InputGroup className='custom-input-text'>
                     <InputGroup.Text className='intext'>image</InputGroup.Text>
                     <Form.Control name='image' />
                 </InputGroup>
-                <InputGroup className='CustomInputgroup'>
+                <InputGroup className='custom-input-text'>
                     <InputGroup.Text className='intext'>description</InputGroup.Text>
                     <Form.Control as="textarea" name='description' />
                 </InputGroup>
-                <button type='submit'>Regist</button>
+                <button type='submit'>{comment}</button>
 
             </form>
         </div>

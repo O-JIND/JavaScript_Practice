@@ -6,11 +6,17 @@ import Createone from "./crudfun/createone.js";
 import Deleteone from "./crudfun/deleteone.js";
 import Updateone from "./crudfun/updateone.js";
 
-function App({ mode, productitem, onSubmitInsert }) {
+function App({ mode, productitem, onSubmitInsert, onSubmitUpdate }) {
 
-    const sub = (f) => {
-        onSubmitInsert(f);
+    const sub = (formData) => {
+        onSubmitInsert(formData);
     }
+    const update = (formData) => {
+        onSubmitUpdate(formData);
+    }
+
+
+
 
     switch (mode) {
         case 'detail':
@@ -18,9 +24,9 @@ function App({ mode, productitem, onSubmitInsert }) {
         case 'Create':
             return <Createone onSubmitInsert={sub} />;
         case 'Delete':
-            return <Deleteone onSubmitInsert={sub} />;
+            return <Deleteone />;
         case 'Update':
-            return <Updateone onSubmitInsert={sub} />;
+            return <Updateone onSubmitUpdate={update} product={productitem} />;
         case 'AddCatg':
             return <AddCategory onSubmitInsert={sub} />;
 

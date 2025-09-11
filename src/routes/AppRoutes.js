@@ -45,6 +45,7 @@ import AppEffect3 from '../Components/ch05.hooks/use_effect_03';
 import AppBoot from '../Components/ch06.bootstrap/drink_menu_01/main';
 import AppBoot2 from '../Components/ch06.bootstrap/drink_menu_02/main';
 import AppBoot3 from '../Components/ch06.bootstrap/drink_menu_03/main';
+import AppBoot4 from '../Components/ch06.bootstrap/drink_menu_04/main';
 
 
 
@@ -108,6 +109,7 @@ function AppRoutes() {
             <Route path='/drink_menu_01' element={<AppBoot />} />
             <Route path='/drink_menu_02' element={<AppBoot2 />} />
             <Route path='/drink_menu_03' element={<AppBoot3 />} />
+            <Route path='/drink_menu_04' element={<AppBoot4 />} />
 
 
 

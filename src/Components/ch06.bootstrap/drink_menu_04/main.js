@@ -37,21 +37,16 @@ function App() {
         ));
         return filt[0];
     }
-
+    //수정 할 상품 1개 정보 저장 
 
     const ModeChanged = (mode) => {
         setMode(mode); //Mode 전환
+
     }
 
 
-
     const InsertedData = (formData) => {
-
-
-
-        const newId = Math.max(...products.map((item) => item.id)) + 1;
-
-        //  console.log(`input : ${formData.name.value}`)
+        const newId = Math.max(...products.map((item) => item.id + 1));
         const newData = [{
             id: newId,
             name: formData.name.value,
@@ -61,14 +56,15 @@ function App() {
             image: formData.image.value,
             description: formData.description.value
         }];
-
         const newProduct = products.concat(newData)
         setproducts(newProduct);
-
         setMode('read')
     }
 
+    const UpdatedData = (formData) => {
+        console.log(formData);
 
+    }
 
     return (
         <div className="App">
@@ -84,6 +80,7 @@ function App() {
                     mode={mode}
                     productitem={getProductById()}
                     onSubmitInsert={InsertedData}
+                    onSubmitUpdate={UpdatedData}
                 />
             </Card.Body>
             <Card.Footer>
