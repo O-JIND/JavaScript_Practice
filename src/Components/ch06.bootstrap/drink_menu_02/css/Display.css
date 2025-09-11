@@ -1,0 +1,31 @@
+* {}
+
+/*className 은 .사용 */
+.myTable {
+    border: 0px solid black;
+    padding: 5px;
+
+}
+
+.myeft {
+    width: 5;
+    text-align: left;
+}
+
+.mymiddle {
+    width: 15;
+    text-align: left;
+}
+
+.mydescription {
+    width: 10;
+    padding: 5;
+    text-align: left;
+    border: 1px dashed pink;
+    color: burlywood;
+}
+
+.myImagin {
+    height: 300;
+
+}
