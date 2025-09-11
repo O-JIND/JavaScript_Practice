@@ -43,14 +43,15 @@ import AppEffect3 from '../Components/ch05.hooks/use_effect_03';
 
 //6장
 import AppBoot from '../Components/ch06.bootstrap/drink_menu_01/main';
-import AppBoot2 from '../Components/ch06.bootstrap/drink_menu_02/main2';
+import AppBoot2 from '../Components/ch06.bootstrap/drink_menu_02/main';
+import AppBoot3 from '../Components/ch06.bootstrap/drink_menu_03/main';
 
 
 
 
 import AppEventpb from '../Components/ch04.event_handling/pp/eventprob';
-
 import AppPractice from '../MM/prac';
+import Appcc from '../MM/drink_menu_03/mainp';
 
 
 function AppRoutes() {
@@ -104,13 +105,15 @@ function AppRoutes() {
 
 
 
-            <Route path='/main' element={<AppBoot />} />
-            <Route path='/main2' element={<AppBoot2 />} />
+            <Route path='/drink_menu_01' element={<AppBoot />} />
+            <Route path='/drink_menu_02' element={<AppBoot2 />} />
+            <Route path='/drink_menu_03' element={<AppBoot3 />} />
 
 
 
             <Route path='/eventprob' element={<AppEventpb />} />
             <Route path='/prac' element={<AppPractice />} />
+            <Route path='/mainp' element={<Appcc />} />
 
         </Routes>
     );

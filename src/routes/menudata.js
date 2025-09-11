@@ -61,8 +61,9 @@ export const menuData = [
 
                 chapter: "ch06.bootstrap",
                 items: [
-                        { path: '/main', label: 'drink_menu_01' },
-                        { path: '/main2', label: 'drink_menu_02' },
+                        { path: '/drink_menu_01', label: 'drink_menu_01' },
+                        { path: '/drink_menu_02', label: 'drink_menu_02' },
+                        { path: '/drink_menu_03', label: 'drink_menu_03' },
 
 
                 ]
@@ -73,7 +74,8 @@ export const menuData = [
                 chapter: "My Ground",
                 items: [
                         { path: '/prac', label: 'Practice Myself' },
-                        { path: '/eventprob', label: 'Practice problem' }
+                        { path: '/eventprob', label: 'Practice problem' },
+                        { path: '/mainp', label: 'Practice problem SB' },
 
                 ]
 
