@@ -46,13 +46,14 @@ import AppBoot from '../Components/ch06.bootstrap/drink_menu_01/main';
 import AppBoot2 from '../Components/ch06.bootstrap/drink_menu_02/main';
 import AppBoot3 from '../Components/ch06.bootstrap/drink_menu_03/main';
 import AppBoot4 from '../Components/ch06.bootstrap/drink_menu_04/main';
+import AppBoot5 from '../Components/ch06.bootstrap/drink_menu_05/main';
 
 
 
 
 import AppEventpb from '../Components/ch04.event_handling/pp/eventprob';
 import AppPractice from '../MM/prac';
-import Appcc from '../MM/drink_menu_03/mainp';
+import Appcc from '../MM/drink_menu_prac/main';
 
 
 function AppRoutes() {
@@ -110,12 +111,13 @@ function AppRoutes() {
             <Route path='/drink_menu_02' element={<AppBoot2 />} />
             <Route path='/drink_menu_03' element={<AppBoot3 />} />
             <Route path='/drink_menu_04' element={<AppBoot4 />} />
+            <Route path='/drink_menu_05' element={<AppBoot5 />} />
 
 
 
             <Route path='/eventprob' element={<AppEventpb />} />
             <Route path='/prac' element={<AppPractice />} />
-            <Route path='/mainp' element={<Appcc />} />
+            <Route path='/drink_menu_prac' element={<Appcc />} />
 
         </Routes>
     );

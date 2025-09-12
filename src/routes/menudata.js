@@ -65,6 +65,7 @@ export const menuData = [
                         { path: '/drink_menu_02', label: 'drink_menu_02' },
                         { path: '/drink_menu_03', label: 'drink_menu_03' },
                         { path: '/drink_menu_04', label: 'drink_menu_04' },
+                        { path: '/drink_menu_05', label: 'drink_menu_05' },
 
 
                 ]
@@ -76,7 +77,7 @@ export const menuData = [
                 items: [
                         { path: '/prac', label: 'Practice Myself' },
                         { path: '/eventprob', label: 'Practice problem' },
-                        { path: '/mainp', label: 'Practice problem SB' },
+                        { path: '/drink_menu_prac', label: 'Practice problem SB' },
 
                 ]
 

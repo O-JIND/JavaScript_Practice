@@ -5,8 +5,6 @@ import { Form, InputGroup } from "react-bootstrap";
 function App() {
     const DeleteDate = () => {
 
-
-
     }
 
 

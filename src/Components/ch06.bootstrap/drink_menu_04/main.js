@@ -62,7 +62,13 @@ function App() {
     }
 
     const UpdatedData = (formData) => {
-        console.log(formData);
+        const leftproducts = products.filter((item) => (item.id !== formData.id))
+        setproducts(leftproducts.concat(formData));
+        setMode('read');
+    }
+
+    const DeleteData = (formData) => {
+
 
     }
 
@@ -81,6 +87,8 @@ function App() {
                     productitem={getProductById()}
                     onSubmitInsert={InsertedData}
                     onSubmitUpdate={UpdatedData}
+                    onSubmitDelete={DeleteData}
+
                 />
             </Card.Body>
             <Card.Footer>
