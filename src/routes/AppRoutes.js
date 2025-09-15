@@ -47,6 +47,8 @@ import AppBoot2 from '../Components/ch06.bootstrap/drink_menu_02/main';
 import AppBoot3 from '../Components/ch06.bootstrap/drink_menu_03/main';
 import AppBoot4 from '../Components/ch06.bootstrap/drink_menu_04/main';
 import AppBoot5 from '../Components/ch06.bootstrap/drink_menu_05/main';
+import AppBoot6 from '../Components/ch06.bootstrap/drink_menu_06/main';
+import AppBoot7 from '../Components/ch06.bootstrap/drink_menu_07/main';
 
 
 
@@ -112,6 +114,8 @@ function AppRoutes() {
             <Route path='/drink_menu_03' element={<AppBoot3 />} />
             <Route path='/drink_menu_04' element={<AppBoot4 />} />
             <Route path='/drink_menu_05' element={<AppBoot5 />} />
+            <Route path='/drink_menu_06' element={<AppBoot6 />} />
+            <Route path='/drink_menu_07' element={<AppBoot7 />} />
 
 
 

@@ -66,6 +66,8 @@ export const menuData = [
                         { path: '/drink_menu_03', label: 'drink_menu_03' },
                         { path: '/drink_menu_04', label: 'drink_menu_04' },
                         { path: '/drink_menu_05', label: 'drink_menu_05' },
+                        { path: '/drink_menu_06', label: 'drink_menu_06' },
+                        { path: '/drink_menu_07', label: 'drink_menu_07' },
 
 
                 ]

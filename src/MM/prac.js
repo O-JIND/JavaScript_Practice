@@ -1,25 +1,22 @@
+import { Col } from "react-bootstrap";
 
 function App() {
 
 
-    const a = ["A", "B", "C"]
-    const b = ["1", "2", "3"]
+    const a = [{
+        id: 1,
+        name: 2,
+        class: 3,
+        ma: 4,
+        list: 6
 
-    const ch = () => {
-        if (document.getElementById("1") == 1) {
-            return "ul";
-        } else {
-            return "ol";
-        }
-
-    }
+    }]
 
 
+    const aa = a.map((a) => a.Col)
     return (
         <div className="App" id="1">
-            <ch>
-
-            </ch>
+            {console.log(aa)}
 
         </div>
 
