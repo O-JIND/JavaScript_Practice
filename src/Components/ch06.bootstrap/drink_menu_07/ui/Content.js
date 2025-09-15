@@ -39,12 +39,9 @@ function App({ contents, onClickToContent, categories, onOrderByClick, orderBy, 
 
 
         if (isColumn) {
-
             onOrderByClick(targetId, orderBy.ordering);
-
         } else {
-            orderBy.ordering = targetId;
-            onOrderByClick(orderBy.ordering, targetId);
+            onOrderByClick(orderBy.column, targetId);
         }
     }
 
