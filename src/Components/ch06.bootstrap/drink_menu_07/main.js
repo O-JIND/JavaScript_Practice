@@ -141,15 +141,20 @@ function App() {
 
 
     //field search function add
-    const [filterCategory, setfilterCategory] = useState(null);
+    const [filterCategory, setfilterCategory] = useState('all');
     const ChangeCategory = (sortcat) => {
         setfilterCategory(sortcat);
 
         // Ordering(orderBy)
-        const filteredcat = categories.filter((item) => item.category = sortcat);
-        setfilterCategory(filteredcat)
+
     }
 
+    const isFilteringNeeded = filterCategory && filterCategory !== 'all';
+
+    const filteredProducts =
+        isFilteringNeeded ?
+            products.filter((item) => item.category === filterCategory) :
+            products;
 
     return (
         <div className="App">
@@ -160,7 +165,7 @@ function App() {
             <Card.Body>
                 {/**onClickToContent props 가 return 후  ClickArrived가 동작*/}
                 <Content
-                    contents={products} onClickToContent={ClickArrived} select={selected}
+                    contents={filteredProducts} onClickToContent={ClickArrived} select={selected}
                     categories={categories} onOrderByClick={ClickOrderBy} orderBy={orderBy}
                     onChangeCategory={ChangeCategory}
                 />

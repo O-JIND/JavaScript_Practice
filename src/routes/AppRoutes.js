@@ -1,6 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
 //기본 라이브러리
-
+// ch01 장
+import AppMakeArray01 from '../Components/ch01.react_basic/make_array_01';
+import AppMathObject01 from '../Components/ch01.react_basic/math_object_01';
+import AppIfExercise from '../Components/ch01.react_basic/if_exercise';
+import AppSwitchExercise from '../Components/ch01.react_basic/switch_exercise';
+import AppTypeOfNumber from '../Components/ch01.react_basic/typeof_number';
+import AppForm from '../Components/ch01.react_basic/form_exam';
+import AppList from '../Components/ch01.react_basic/list_exam';
+import AppTableex from '../Components/ch01.react_basic/table_exam';
 //2장
 //. 현재 위치 .. 상위폴더 ,/ 구분자
 //import appname from filepath
@@ -62,10 +70,16 @@ function AppRoutes() {
     return (
         <Routes>
 
-
-
-
             <Route path='/' element={<AppLetConst />} />
+            <Route path='/make_array_01' element={<AppMakeArray01 />} />
+            <Route path='/math_object_01' element={<AppMathObject01 />} />
+            <Route path='/if_exercise' element={<AppIfExercise />} />
+            <Route path='/switch_exercise' element={<AppSwitchExercise />} />
+            <Route path='/typeof_number' element={<AppTypeOfNumber />} />
+            <Route path='/form_exam' element={<AppForm />} />
+            <Route path='/list_exam' element={<AppList />} />
+            <Route path='/table_exam' element={<AppTableex />} />
+
             <Route path='/let_const' element={<AppLetConst />} />
             <Route path='/Template_String' element={<AppTemplateString />} />
             <Route path='/make_Subject_List' element={<AppSubjectList />} />

@@ -1,5 +1,5 @@
-import { Table, Button, Dropdown, DropdownButton, ButtonGroup, ListGroup } from "react-bootstrap";
-function App({ contents, onClickToContent, categories, onOrderByClick, orderBy }) {
+import { Table, Button, Dropdown, DropdownButton, ButtonGroup, ListGroup, Form } from "react-bootstrap";
+function App({ contents, onClickToContent, categories, onOrderByClick, orderBy, onChangeCat }) {
 
     const ClickToItem = (evt) => {
         const clk = Number(evt.target.parentNode.id);
@@ -32,31 +32,35 @@ function App({ contents, onClickToContent, categories, onOrderByClick, orderBy }
        다중 택일 ?:; 대신 find 사용*/
     const onClickorderby = (evt) => {
         evt.preventDefault();
-
         const targetId = evt.target.id;
         const orderColumnList = ['name', 'price', 'category']
         const isColumn = orderColumnList.includes(targetId);
-
-
         if (isColumn) {
-
             onOrderByClick(targetId, orderBy.ordering);
-
         } else {
-            orderBy.ordering = targetId;
-            onOrderByClick(orderBy.ordering, targetId);
+            onOrderByClick(orderBy.column, targetId);
         }
     }
 
     const OrderColumn = "Column";
     const SortBycol = " Sortby"
 
+    const variousCategory = () => (categories.map((item) => <option key={item.Eng} value={item.Eng} >{item.Kor}</option>))
+
+    const throwValue = (evt) => {
+        const thw = evt.target.value;
+        onChangeCat(thw);
+        console.log(thw);
+
+
+    }
+
     return (
         <>
             <Table>
                 <tbody>
                     <tr>
-                        <td width="10%" valign="middle">
+                        <td width="20%" valign="middle">
                             <Dropdown as={ButtonGroup}>
                                 <Dropdown.Toggle variant="info" id="dropdown-split-basic" >
                                     {OrderColumn}
@@ -78,11 +82,18 @@ function App({ contents, onClickToContent, categories, onOrderByClick, orderBy }
                                 </Dropdown.Menu>
                             </Dropdown >
                         </td >
-                        <td width="10%" valign="middle">
+                        <td width="20%" valign="middle">
                             <ListGroup horizontal >
                                 <ListGroup.Item>{OrderColumn} : {orderBy.column} </ListGroup.Item>
                                 <ListGroup.Item>{SortBycol} : {orderBy.ordering} </ListGroup.Item>
                             </ListGroup>
+                        </td>
+                        <td width="30%">
+                            <Form.Select onChange={throwValue}>
+                                <option key="-" value="-" >- </option>
+                                <option key="All" value="All" >All </option>
+                                {variousCategory()}
+                            </Form.Select>
                         </td>
 
                     </tr>

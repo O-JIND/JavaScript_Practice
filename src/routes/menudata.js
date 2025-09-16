@@ -1,6 +1,19 @@
 //export는 외부에서 참조가 가능하도록 길을 틔워줌.
 export const menuData = [
         {
+                chapter: "ch01. Basic",
+                items: [
+                        { path: '/make_array_01', label: '배열 실습 01' },
+                        { path: '/math_object_01', label: 'Math 객체 실습 01' },
+                        { path: '/if_exercise', label: 'If 구문 실습' },
+                        { path: '/switch_exercise', label: 'Switch 구문 실습' },
+                        { path: '/typeof_number', label: 'Typeof와 Number 실습' },
+                        { path: '/form_exam', label: 'Form 실습' },
+                        { path: '/list_exam', label: 'List  실습' },
+                        { path: '/table_exam', label: 'Table 실습' },
+                ]
+        },
+        {
                 chapter: "ch02.ECMAScript",
                 items: [
                         { path: '/let_const', label: 'let & const 실습' },
@@ -10,9 +23,6 @@ export const menuData = [
                         { path: '/arrow_function', label: 'Arrow' },
                         { path: '/array_map', label: 'Array' },
                         { path: '/spread_operator', label: 'Spread ' }
-
-
-
                 ]
         },
         {
@@ -26,7 +36,6 @@ export const menuData = [
                         { path: '/use_props', label: 'File seperate Using props' },
                         { path: '/array_and_table01', label: 'File seperate Using props' },
                         { path: '/array_and_table02', label: 'prove File example' }
-
                 ]
 
         }, {
@@ -53,8 +62,6 @@ export const menuData = [
                         { path: '/use_effect_01', label: 'Effect event1' },
                         { path: '/use_effect_02', label: 'Effect event2' },
                         { path: '/use_effect_03', label: 'Effect event3' },
-
-
                 ]
 
         }, {
@@ -68,8 +75,6 @@ export const menuData = [
                         { path: '/drink_menu_05', label: 'drink_menu_05' },
                         { path: '/drink_menu_06', label: 'drink_menu_06' },
                         { path: '/drink_menu_07', label: 'drink_menu_07' },
-
-
                 ]
 
         },
@@ -80,7 +85,6 @@ export const menuData = [
                         { path: '/prac', label: 'Practice Myself' },
                         { path: '/eventprob', label: 'Practice problem' },
                         { path: '/drink_menu_prac', label: 'Practice problem SB' },
-
                 ]
 
         },

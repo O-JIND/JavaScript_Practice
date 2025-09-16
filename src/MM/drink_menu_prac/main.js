@@ -22,7 +22,7 @@ function App() {
         { id: 7, name: "Vanilla Macaron", price: 2500, category: 'macaron', stock: 120, image: '/Image/vanilla_macaron.png', description: "부드럽고 달콤한 바닐라 크림이 들어 있는 프랑스식 디저트입니다. 겉은 바삭하고 속은 촉촉한 식감이 특징입니다." },
         { id: 8, name: "Strawberry Macaron", price: 2800, category: 'macaron', stock: 90, image: '/Image/strawberry_macaron.png', description: "상큼한 딸기 크림이 가득 들어 있는 마카롱으로, 달콤하면서도 상큼한 맛을 즐길 수 있습니다." }
     ]);
-
+    const [seppro, setseppro] = useState([])
     const categorylist = [
         { Eng: 'food', Kor: '음식' },
         { Eng: 'drink', Kor: '마실거리' },
@@ -141,9 +141,13 @@ function App() {
 
 
     //field search function add
-
-
-
+    const ChangedbyCat = (Cat) => {
+        if (Cat === "All") { setseppro(products) }
+        else {
+            const sortbycombo = products.filter((item) => item.category === Cat);
+            setseppro(sortbycombo)
+        }
+    }
     return (
         <div className="App">
             <Card.Header>
@@ -153,8 +157,9 @@ function App() {
             <Card.Body>
                 {/**onClickToContent props 가 return 후  ClickArrived가 동작*/}
                 <Content
-                    contents={products} onClickToContent={ClickArrived} select={selected}
+                    contents={seppro} onClickToContent={ClickArrived} select={selected}
                     categories={categories} onOrderByClick={ClickOrderBy} orderBy={orderBy}
+                    onChangeCat={ChangedbyCat}
                 />
             </Card.Body>
             <Card.Body>
